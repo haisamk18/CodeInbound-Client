@@ -5,7 +5,7 @@ import data from './Component/data';
 
 import './App.css'
 
-import First from './Component/First';
+import Questions from './Component/Questions';
 import Success from './Component/Success';
 import Welcome from './Component/Welcome';
 
@@ -22,7 +22,7 @@ function App() {
 
         {data.map((i)=> {
           return (
-            <Route key={i.srno} exact path={`/${i.srno}`}  element={<First array={data} Route={i.srno} question={i.question}/>}  />
+            <Route key={i.srno} exact path={`/${i.srno}`}  element={<Questions array={data} Route={i.srno} question={i.question}/>}  />
           )
         })}
         
