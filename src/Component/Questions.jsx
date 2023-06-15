@@ -33,7 +33,7 @@ const Questions = ({question,Route,array}) => {
           if (data.length > 0){
 
             console.log({Data:data});
-            axios.post('https://weak-tan-mite-belt.cyclic.app/api/data', data)
+            axios.post('https://sangria-foal-yoke.cyclic.app/api/data', data)
             .then(response => {
               console.log(response.data);
               navigate('/submitted');
